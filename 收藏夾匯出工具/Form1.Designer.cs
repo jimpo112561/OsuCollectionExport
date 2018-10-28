@@ -45,8 +45,9 @@
             // 
             // btn_Export
             // 
+            this.btn_Export.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btn_Export.Enabled = false;
-            this.btn_Export.Location = new System.Drawing.Point(357, 310);
+            this.btn_Export.Location = new System.Drawing.Point(336, 344);
             this.btn_Export.Name = "btn_Export";
             this.btn_Export.Size = new System.Drawing.Size(75, 23);
             this.btn_Export.TabIndex = 2;
@@ -56,9 +57,12 @@
             // 
             // treeView1
             // 
-            this.treeView1.Location = new System.Drawing.Point(15, 28);
+            this.treeView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.treeView1.Location = new System.Drawing.Point(12, 28);
             this.treeView1.Name = "treeView1";
-            this.treeView1.Size = new System.Drawing.Size(417, 276);
+            this.treeView1.Size = new System.Drawing.Size(399, 310);
             this.treeView1.TabIndex = 3;
             this.treeView1.BeforeSelect += new System.Windows.Forms.TreeViewCancelEventHandler(this.treeView1_BeforeCheck);
             this.treeView1.AfterSelect += new System.Windows.Forms.TreeViewEventHandler(this.treeView1_AfterCheck);
@@ -73,12 +77,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 338);
+            this.ClientSize = new System.Drawing.Size(423, 372);
             this.Controls.Add(this.treeView1);
             this.Controls.Add(this.btn_Export);
             this.Controls.Add(this.lab_OsuPath);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.MaximizeBox = false;
             this.Name = "Form1";
             this.ShowIcon = false;
             this.Text = "收藏夾匯出工具  By 孤之界(jun112561)";
